@@ -1,0 +1,10 @@
+C:\Users\jebin\OneDrive\Desktop\GitHUB\MiracleProject.Tests\obj\Debug\net8.0\MiracleProject.Tests.csproj.AssemblyReference.cache
+C:\Users\jebin\OneDrive\Desktop\GitHUB\MiracleProject.Tests\obj\Debug\net8.0\MiracleProject.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jebin\OneDrive\Desktop\GitHUB\MiracleProject.Tests\obj\Debug\net8.0\MiracleProject.Tests.AssemblyInfoInputs.cache
+C:\Users\jebin\OneDrive\Desktop\GitHUB\MiracleProject.Tests\obj\Debug\net8.0\MiracleProject.Tests.AssemblyInfo.cs
+C:\Users\jebin\OneDrive\Desktop\GitHUB\MiracleProject.Tests\obj\Debug\net8.0\MiracleProject.Tests.csproj.CoreCompileInputs.cache
+C:\Users\jebin\OneDrive\Desktop\GitHUB\MiracleProject.Tests\obj\Debug\net8.0\MiracleProject.Tests.gentestingplatformentrypointinputcache.cache
+C:\Users\jebin\OneDrive\Desktop\GitHUB\MiracleProject.Tests\obj\Debug\net8.0\MiracleProject.Tests.genautoregisteredextensionsinputcache.cache
+C:\Users\jebin\OneDrive\Desktop\GitHUB\MiracleProject.Tests\obj\Debug\net8.0\AutoRegisteredExtensions.cs
+C:\Users\jebin\OneDrive\Desktop\GitHUB\MiracleProject.Tests\obj\Debug\net8.0\TestPlatformEntryPoint.cs
+C:\Users\jebin\OneDrive\Desktop\GitHUB\MiracleProject.Tests\obj\Debug\net8.0\MiracleProject.Tests.sourcelink.json

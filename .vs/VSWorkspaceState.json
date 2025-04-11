@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\docs"
+    "\\MiracleSolution",
+    "\\MiracleSolution\\MiracleProject",
+    "\\MiracleSolution\\MiracleProject\\src",
+    "\\MiracleSolution\\MiracleProject\\src\\MiracleProject"
   ],
-  "SelectedNode": "\\docs\\README.md",
+  "SelectedNode": "\\MiracleSolution\\MiracleProject\\src\\MiracleProject\\obj",
   "PreviewInSolutionExplorer": false
 }
