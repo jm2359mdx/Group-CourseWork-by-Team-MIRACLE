@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\MiracleProject.Tests\\PropertyManagerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiracleSolution\\MiracleProject.Tests\\PropertyManagerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\MiracleProject\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiracleSolution\\MiracleProject\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\MiracleProject\\Services\\PropertyManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiracleSolution\\MiracleProject\\Services\\PropertyManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\MiracleProject\\Services\\SqlConnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiracleSolution\\MiracleProject\\Services\\SqlConnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\MiracleProject\\Models\\Property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiracleSolution\\MiracleProject\\Models\\Property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\sql\\database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiracleSolution\\sql\\database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\sql\\database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiracleSolution\\sql\\database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +31,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PropertyManagerTests.cs",
-              "DocumentMoniker": "C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\MiracleProject.Tests\\PropertyManagerTests.cs",
-              "RelativeDocumentMoniker": "MiracleSolution\\MiracleProject.Tests\\PropertyManagerTests.cs",
-              "ToolTip": "C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\MiracleProject.Tests\\PropertyManagerTests.cs",
-              "RelativeToolTip": "MiracleSolution\\MiracleProject.Tests\\PropertyManagerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAwAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\MiracleProject\\Program.cs",
+              "RelativeDocumentMoniker": "MiracleSolution\\MiracleProject\\Program.cs",
+              "ToolTip": "C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\MiracleProject\\Program.cs",
+              "RelativeToolTip": "MiracleSolution\\MiracleProject\\Program.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAAANIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T20:01:31.507Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PropertyManager.cs",
-              "DocumentMoniker": "C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\MiracleProject\\Services\\PropertyManager.cs",
-              "RelativeDocumentMoniker": "MiracleSolution\\MiracleProject\\Services\\PropertyManager.cs",
-              "ToolTip": "C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\MiracleProject\\Services\\PropertyManager.cs",
-              "RelativeToolTip": "MiracleSolution\\MiracleProject\\Services\\PropertyManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T20:01:12.974Z",
+              "WhenOpened": "2025-04-12T12:55:26.464Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Property.cs",
-              "DocumentMoniker": "C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\MiracleProject\\Models\\Property.cs",
-              "RelativeDocumentMoniker": "MiracleSolution\\MiracleProject\\Models\\Property.cs",
-              "ToolTip": "C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\MiracleProject\\Models\\Property.cs",
-              "RelativeToolTip": "MiracleSolution\\MiracleProject\\Models\\Property.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "database.sql ",
+              "DocumentMoniker": "C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\sql\\database.sql",
+              "RelativeDocumentMoniker": "MiracleSolution\\sql\\database.sql",
+              "ToolTip": "database.sql ",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-04-12T12:49:52.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SqlConnector.cs",
+              "DocumentMoniker": "C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\MiracleProject\\Services\\SqlConnector.cs",
+              "RelativeDocumentMoniker": "MiracleSolution\\MiracleProject\\Services\\SqlConnector.cs",
+              "ToolTip": "C:\\Users\\jebin\\OneDrive\\Desktop\\gitHUB\\MiracleSolution\\MiracleProject\\Services\\SqlConnector.cs",
+              "RelativeToolTip": "MiracleSolution\\MiracleProject\\Services\\SqlConnector.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T20:00:53.209Z",
+              "WhenOpened": "2025-04-12T12:48:03.123Z",
               "EditorCaption": ""
             }
           ]

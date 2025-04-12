@@ -4,19 +4,23 @@ namespace MiracleProject.Models
 {
     public class Tenant
     {
-        public int TenantID { get; set; }
-        public string Name { get; set; }
-        public int? PropertyID { get; set; }
+        public string TenantID { get; set; } = string.Empty;
+        public string FullName { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Phone { get; set; } = string.Empty;
+        public DateTime DateOfBirth { get; set; }
 
         public void DisplayTenant()
         {
-            string assigned = PropertyID.HasValue ? $"Assigned Property ID: {PropertyID}" : "Not Assigned";
-            Console.WriteLine($"ID: {TenantID}, Name: {Name}, {assigned}");
+            Console.WriteLine($"ID: {TenantID}, Name: {FullName}, Email: {Email}, Phone: {Phone}, DOB: {DateOfBirth:MM/dd/yyyy}");
         }
 
-        public bool IsAssigned()
+        public int GetAge()
         {
-            return PropertyID.HasValue;
+            int age = DateTime.Now.Year - DateOfBirth.Year;
+            if (DateTime.Now.DayOfYear < DateOfBirth.DayOfYear)
+                age--;
+            return age;
         }
     }
 }

@@ -4,27 +4,27 @@ namespace MiracleProject.Models
 {
     public class Property
     {
-        public int PropertyID { get; set; }
-        public string Address { get; set; }
-        public decimal Rent { get; set; }
-        public string Status { get; set; } = "Available";
+        public string PropertyID { get; set; } = string.Empty;
+        public string Address { get; set; } = string.Empty;
+        public decimal MonthlyRent { get; set; }
+        public string PropertyType { get; set; } = string.Empty;
+        public int Bedrooms { get; set; }
+        public int SquareFootage { get; set; }
+        public bool IsOccupied { get; set; } = false;
 
         public void DisplayProperty()
         {
-            Console.WriteLine($"ID: {PropertyID}, Address: {Address}, Rent: {Rent:C}, Status: {Status}");
+            Console.WriteLine($"ID: {PropertyID}, Address: {Address}, MonthlyRent: {MonthlyRent:C}, Type: {PropertyType}, Bedrooms: {Bedrooms}, Size: {SquareFootage} sqft, Status: {(IsOccupied ? "Occupied" : "Available")}");
         }
 
-        public void UpdateStatus(string newStatus)
+        public void UpdateStatus(bool occupied)
         {
-            if (!string.IsNullOrWhiteSpace(newStatus))
-            {
-                Status = newStatus;
-            }
+            IsOccupied = occupied;
         }
 
         public bool IsAvailable()
         {
-            return Status.ToLower() == "available";
+            return !IsOccupied;
         }
     }
 }

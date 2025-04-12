@@ -2,7 +2,6 @@
  * File: PropertyManager.cs
  * Author: Scrum Master 
  * Purpose: Backend service to manage properties and tenants.
-
  */
 
 using System;
@@ -14,24 +13,18 @@ namespace MiracleProject.Services
 {
     /// <summary>
     /// Manages operations related to Properties and Tenants,
-    /// such as adding and tracking property records.
+    /// such as adding, assigning, and retrieving records.
     /// </summary>
     public class PropertyManager
     {
-        /// <summary>
-        /// List of all properties in the system.
-        /// </summary>
-        public List<Property> Properties { get; private set; } = new List<Property>();
+        private readonly Dictionary<string, string> _propertyAssignments = new();
 
-        /// <summary>
-        /// List of all tenants in the system.
-        /// </summary>
+        public List<Property> Properties { get; private set; } = new List<Property>();
         public List<Tenant> Tenants { get; private set; } = new List<Tenant>();
 
         /// <summary>
         /// Adds a new property to the system.
         /// </summary>
-        /// <param name="property">Property object to add</param>
         public void AddProperty(Property property)
         {
             if (property == null)
@@ -51,23 +44,69 @@ namespace MiracleProject.Services
         }
 
         /// <summary>
-        /// Displays all properties in the system.
+        /// Returns a list of all properties.
         /// </summary>
-        public void ViewProperties()
+        public List<Property> ViewProperties() => Properties;
+
+        /// <summary>
+        /// Adds a new tenant to the system.
+        /// </summary>
+        public void AddTenant(Tenant tenant)
         {
-            if (Properties.Count == 0)
+            if (tenant == null)
             {
-                Console.WriteLine("No properties found.");
+                Console.WriteLine("Invalid tenant. Cannot add null.");
                 return;
             }
 
-            foreach (var prop in Properties)
+            if (Tenants.Any(t => t.TenantID == tenant.TenantID))
             {
-                prop.DisplayProperty();
+                Console.WriteLine("A tenant with this ID already exists.");
+                return;
             }
+
+            Tenants.Add(tenant);
+            Console.WriteLine("Tenant added successfully.");
         }
 
+        /// <summary>
+        /// Returns a list of all tenants.
+        /// </summary>
+        public List<Tenant> ViewTenants() => Tenants;
 
+        /// <summary>
+        /// Assigns a tenant to a property if the property is available.
+        /// </summary>
+        public void AssignTenantToProperty(string tenantId, string propertyId)
+        {
+            var tenant = Tenants.FirstOrDefault(t => t.TenantID.Equals(tenantId, StringComparison.OrdinalIgnoreCase));
+            var property = Properties.FirstOrDefault(p => p.PropertyID.Equals(propertyId, StringComparison.OrdinalIgnoreCase));
 
+            if (tenant == null)
+                throw new Exception("Tenant not found.");
+            if (property == null)
+                throw new Exception("Property not found.");
+            if (property.IsOccupied)
+                throw new Exception("Property is already occupied.");
+
+            property.IsOccupied = true;
+            _propertyAssignments[propertyId] = tenantId;
+        }
+
+        /// <summary>
+        /// Vacates a property by unassigning the tenant and marking it available.
+        /// </summary>
+        public void VacateProperty(string propertyId)
+        {
+            var property = Properties.FirstOrDefault(p => p.PropertyID.Equals(propertyId, StringComparison.OrdinalIgnoreCase));
+
+            if (property == null)
+                throw new Exception("Property not found.");
+            if (!property.IsOccupied)
+                throw new Exception("Property is already vacant.");
+
+            property.IsOccupied = false;
+            _propertyAssignments.Remove(propertyId);
+        }
     }
 }
