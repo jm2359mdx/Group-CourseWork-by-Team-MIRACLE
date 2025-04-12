@@ -1,3 +1,5 @@
+using System;
+
 namespace MiracleProject.Models
 {
     public class Tenant
@@ -10,6 +12,11 @@ namespace MiracleProject.Models
         {
             string assigned = PropertyID.HasValue ? $"Assigned Property ID: {PropertyID}" : "Not Assigned";
             Console.WriteLine($"ID: {TenantID}, Name: {Name}, {assigned}");
+        }
+
+        public bool IsAssigned()
+        {
+            return PropertyID.HasValue;
         }
     }
 }

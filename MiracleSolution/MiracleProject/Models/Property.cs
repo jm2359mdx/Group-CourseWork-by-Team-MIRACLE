@@ -1,3 +1,5 @@
+using System;
+
 namespace MiracleProject.Models
 {
     public class Property
@@ -9,7 +11,20 @@ namespace MiracleProject.Models
 
         public void DisplayProperty()
         {
-            Console.WriteLine($"ID: {PropertyID}, Address: {Address}, Rent: {Rent}, Status: {Status}");
+            Console.WriteLine($"ID: {PropertyID}, Address: {Address}, Rent: {Rent:C}, Status: {Status}");
+        }
+
+        public void UpdateStatus(string newStatus)
+        {
+            if (!string.IsNullOrWhiteSpace(newStatus))
+            {
+                Status = newStatus;
+            }
+        }
+
+        public bool IsAvailable()
+        {
+            return Status.ToLower() == "available";
         }
     }
 }

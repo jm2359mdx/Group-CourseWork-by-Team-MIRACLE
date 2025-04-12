@@ -3,9 +3,10 @@
     "",
     "\\MiracleSolution",
     "\\MiracleSolution\\MiracleProject",
-    "\\MiracleSolution\\MiracleProject\\src",
-    "\\MiracleSolution\\MiracleProject\\src\\MiracleProject"
+    "\\MiracleSolution\\MiracleProject.Tests",
+    "\\MiracleSolution\\MiracleProject\\Models",
+    "\\MiracleSolution\\MiracleProject\\Services"
   ],
-  "SelectedNode": "\\MiracleSolution\\MiracleProject\\src\\MiracleProject\\obj",
+  "SelectedNode": "\\MiracleSolution\\MiracleProject\\Models\\Property.cs",
   "PreviewInSolutionExplorer": false
 }

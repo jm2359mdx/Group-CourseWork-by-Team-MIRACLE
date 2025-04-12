@@ -1,9 +1,4 @@
-﻿/*
- * Author: Tester, Scrum Master 
- * Purpose: Unit tests for the PropertyManager class.
- * Last Updated: 10/04/2025
- * Notes: Designed for use in a C# console-based property management app.
- */
+﻿
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MiracleProject.Models;
 using MiracleProject.Services;

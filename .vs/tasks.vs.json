@@ -5,6 +5,11 @@
       "taskLabel": "task-MiracleProject",
       "appliesTo": "MiracleProject.Tests/",
       "type": "launch"
+    },
+    {
+      "taskLabel": "task-MiracleProject",
+      "appliesTo": "MiracleSolution/MiracleProject.Tests/",
+      "type": "launch"
     }
   ]
 }

@@ -1,8 +1,8 @@
 /*
  * File: PropertyManager.cs
- * Author: Developer 1 , Scrum Master 
+ * Author: Scrum Master 
  * Purpose: Backend service to manage properties and tenants.
- * Last Updated: 10/04/2025
+
  */
 
 using System;
@@ -49,6 +49,24 @@ namespace MiracleProject.Services
             Properties.Add(property);
             Console.WriteLine("Property added successfully.");
         }
+
+        /// <summary>
+        /// Displays all properties in the system.
+        /// </summary>
+        public void ViewProperties()
+        {
+            if (Properties.Count == 0)
+            {
+                Console.WriteLine("No properties found.");
+                return;
+            }
+
+            foreach (var prop in Properties)
+            {
+                prop.DisplayProperty();
+            }
+        }
+
 
 
     }

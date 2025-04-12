@@ -1,0 +1,15 @@
+C:\Users\jebin\OneDrive\Desktop\gitHUB\MiracleSolution\MiracleProject\bin\Debug\net8.0\MiracleProject.exe
+C:\Users\jebin\OneDrive\Desktop\gitHUB\MiracleSolution\MiracleProject\bin\Debug\net8.0\MiracleProject.deps.json
+C:\Users\jebin\OneDrive\Desktop\gitHUB\MiracleSolution\MiracleProject\bin\Debug\net8.0\MiracleProject.runtimeconfig.json
+C:\Users\jebin\OneDrive\Desktop\gitHUB\MiracleSolution\MiracleProject\bin\Debug\net8.0\MiracleProject.dll
+C:\Users\jebin\OneDrive\Desktop\gitHUB\MiracleSolution\MiracleProject\bin\Debug\net8.0\MiracleProject.pdb
+C:\Users\jebin\OneDrive\Desktop\gitHUB\MiracleSolution\MiracleProject\obj\Debug\net8.0\MiracleProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jebin\OneDrive\Desktop\gitHUB\MiracleSolution\MiracleProject\obj\Debug\net8.0\MiracleProject.AssemblyInfoInputs.cache
+C:\Users\jebin\OneDrive\Desktop\gitHUB\MiracleSolution\MiracleProject\obj\Debug\net8.0\MiracleProject.AssemblyInfo.cs
+C:\Users\jebin\OneDrive\Desktop\gitHUB\MiracleSolution\MiracleProject\obj\Debug\net8.0\MiracleProject.csproj.CoreCompileInputs.cache
+C:\Users\jebin\OneDrive\Desktop\gitHUB\MiracleSolution\MiracleProject\obj\Debug\net8.0\MiracleProject.sourcelink.json
+C:\Users\jebin\OneDrive\Desktop\gitHUB\MiracleSolution\MiracleProject\obj\Debug\net8.0\MiracleProject.dll
+C:\Users\jebin\OneDrive\Desktop\gitHUB\MiracleSolution\MiracleProject\obj\Debug\net8.0\refint\MiracleProject.dll
+C:\Users\jebin\OneDrive\Desktop\gitHUB\MiracleSolution\MiracleProject\obj\Debug\net8.0\MiracleProject.pdb
+C:\Users\jebin\OneDrive\Desktop\gitHUB\MiracleSolution\MiracleProject\obj\Debug\net8.0\MiracleProject.genruntimeconfig.cache
+C:\Users\jebin\OneDrive\Desktop\gitHUB\MiracleSolution\MiracleProject\obj\Debug\net8.0\ref\MiracleProject.dll
