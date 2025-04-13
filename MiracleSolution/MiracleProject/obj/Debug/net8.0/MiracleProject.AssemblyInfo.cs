@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiracleProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7d53afcb8c85688a2770859dcc4592cf8e796a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b738dfe0160e5794d33aa1657e181146a9a0dd9f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiracleProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiracleProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
