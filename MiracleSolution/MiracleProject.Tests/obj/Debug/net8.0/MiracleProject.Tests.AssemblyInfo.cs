@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiracleProject.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7d53afcb8c85688a2770859dcc4592cf8e796a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffe11d4af89e24d4f6945d1e94bce14454cc8bcd")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiracleProject.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiracleProject.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
