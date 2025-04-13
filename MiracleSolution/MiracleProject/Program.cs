@@ -1,5 +1,5 @@
 ﻿/*
- * Author:Secretary, Scrum Master
+ * Author: Secretary, Scrum Master
  * 
  */
 using System;
@@ -9,7 +9,6 @@ using MiracleProject.Models;
 using MiracleProject.Services;
 
 namespace MiracleProject
-
 {
     class Program
     {
@@ -20,9 +19,22 @@ namespace MiracleProject
         {
             Console.Title = "Property Management System";
 
-            // ✅ Test database connection (TEMPORARY)
             var db = new SqlConnector();
             db.TestConnection();
+
+            // Load properties from DB into memory
+            var loadedProperties = db.LoadPropertiesFromDB();
+            foreach (var prop in loadedProperties)
+            {
+                _propertyManager.AddProperty(prop);
+            }
+
+            // Load tenants from SQL
+            var loadedTenants = db.LoadTenantsFromDB();
+            foreach (var tenant in loadedTenants)
+            {
+                _propertyManager.AddTenant(tenant);
+            }
 
             while (!_shouldExit)
             {
@@ -40,7 +52,6 @@ namespace MiracleProject
             Console.WriteLine("1. Property Operations");
             Console.WriteLine("2. Tenant Operations");
             Console.WriteLine("3. Assignment Operations");
-
             Console.WriteLine("4. Exit");
             Console.Write("\nEnter your choice (1-4): ");
         }
@@ -53,7 +64,6 @@ namespace MiracleProject
                 case 1: PropertyOperationsMenu(); break;
                 case 2: TenantOperationsMenu(); break;
                 case 3: AssignmentOperationsMenu(); break;
-                 
                 case 4:
                     _shouldExit = true;
                     Console.WriteLine("\nExiting the system. Goodbye!");
@@ -109,13 +119,18 @@ namespace MiracleProject
 
             try
             {
-                var db = new SqlConnector(); // Connect to DB
-                bool isInserted = db.AddProperty(property); // Save property to SQL
+                var db = new SqlConnector();
+                bool isInserted = db.AddProperty(property);
 
                 if (isInserted)
+                {
+                    _propertyManager.AddProperty(property);
                     ShowSuccess($"Property {property.PropertyID} added to database successfully!");
+                }
                 else
+                {
                     ShowError("❌ Failed to add property to the database.");
+                }
             }
             catch (Exception ex)
             {
@@ -195,13 +210,18 @@ namespace MiracleProject
 
             try
             {
-                var db = new SqlConnector(); // Connect to DB
-                bool isInserted = db.AddProperty(property); // Save property to SQL
+                var db = new SqlConnector();
+                bool isInserted = db.AddTenant(tenant);
 
                 if (isInserted)
-                    ShowSuccess($"Property {property.PropertyID} added to database successfully!");
+                {
+                    _propertyManager.AddTenant(tenant);
+                    ShowSuccess($"Tenant {tenant.FullName} added successfully!");
+                }
                 else
-                    ShowError("❌ Failed to add property to the database.");
+                {
+                    ShowError("❌ Failed to add tenant to the database.");
+                }
             }
             catch (Exception ex)
             {
@@ -276,7 +296,14 @@ namespace MiracleProject
             try
             {
                 _propertyManager.AssignTenantToProperty(tenantId, propertyId);
-                ShowSuccess($"Tenant {tenantId} assigned to property {propertyId} successfully!");
+
+                var db = new SqlConnector();
+                bool success = db.AssignTenantToProperty(propertyId);
+
+                if (success)
+                    ShowSuccess($"Tenant {tenantId} assigned to property {propertyId} successfully!");
+                else
+                    ShowError("❌ Failed to update property status in the database.");
             }
             catch (Exception ex)
             {
@@ -295,7 +322,14 @@ namespace MiracleProject
             try
             {
                 _propertyManager.VacateProperty(propertyId);
-                ShowSuccess($"Property {propertyId} has been vacated successfully!");
+
+                var db = new SqlConnector();
+                bool success = db.VacateProperty(propertyId);
+
+                if (success)
+                    ShowSuccess($"Property {propertyId} has been vacated successfully!");
+                else
+                    ShowError("❌ Failed to update property status in the database.");
             }
             catch (Exception ex)
             {
@@ -304,8 +338,6 @@ namespace MiracleProject
         }
 
         #endregion
-
-        
 
         #region Helpers
 
